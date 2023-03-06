@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["react"],
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "next/core-web-vitals",
+        "plugin:react/all",
+        "standard-with-typescript",
+        "eslint:all",
+        "prettier"
+      ],
+      "rules": {
+        "@typescript-eslint/consistent-type-definitions": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "sort-imports": "off",
+        "no-magic-numbers": "off",
+        "sort-keys": "off",
+        "id-length": "off",
+        "@typescript-eslint/promise-function-async": "off",
+        "func-style": "off",
+        "max-lines-per-function": "off",
+        "max-statements": "off",
+        "no-negated-condition": "off",
+        "class-methods-use-this": "off",
+        "require-atomic-updates": "off",
+        "no-param-reassign": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "no-undefined": "off",
+        "no-ternary": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+          "error",
+          {
+            "extensions": [".tsx"]
+          }
+        ],
+        "react/jsx-no-literals": "off",
+        "react/forbid-component-props": "off",
+        "react/jsx-max-depth": [2, { "max": 12 }],
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/ban-types": "off",
+        "react/jsx-no-bind": "off",
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/no-misused-promises": "off",
+        "react/jsx-no-leaked-render": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "react/require-default-props": "off",
+        "react/button-has-type": "off",
+        "no-shadow": "off",
+        "react/no-danger": "off",
+        "@typescript-eslint/restrict-template-expressions": "off"
+      }
+    }
+  ]
+}
